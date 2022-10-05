@@ -1,0 +1,25 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+.rigth {
+  display: flex;
+  background-color: #811758;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  background-color: #f2e9e4;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img{
+    border: 2px, solid, transparent;
+    border-radius: 5%;
+}
