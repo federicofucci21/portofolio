@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./AboutLanding.module.css"
+import { Link } from "react-router-dom"
 
 function AboutLanding() {
   return (
@@ -10,7 +11,7 @@ function AboutLanding() {
             <h3>I´m a Full Stack Web Debeloper</h3>
             <h3>Do you want to know more about me?</h3>
         </section>
-        <button>Let's Start the Ride</button>
+        <Link to="/home">Let's Start the Ride</Link>
     </div>
   )
 }

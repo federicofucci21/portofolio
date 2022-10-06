@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
-import './App.css';
-import Home from "./Components/Home/Home"
-import { Routes, Route} from "react-router-dom";
-import NavBar from "./Components/NavBar/NavBar"
-import Landing from './Components/Landing/Landing';
+import Home from "./Components/Home/Home";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./Components/NavBar/NavBar";
+import Landing from "./Components/Landing/Landing";
+import style from "./App.module.css"
 
 function App() {
   return (
-    <div className="App">
-      <NavBar path="/"element={NavBar} />
-      <Landing path="/" element={Landing} />
-      {/* <Routes>
-        <Route path="/" element={<Home/>}/>
-      </Routes> */}
-
+    <div class={style.App}>
+    <NavBar path="/" element={NavBar}></NavBar>
+      <Routes>
+        <Route exact path="/" element={<Landing />}></Route>
+        
+        <Route path="/home" element={<Home />}></Route>
+      </Routes>
     </div>
   );
 }
