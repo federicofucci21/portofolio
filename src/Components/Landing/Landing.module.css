@@ -2,24 +2,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  width:auto;
   margin: 0;
+  max-height: fit-content;
 }
 
 .rigth {
   display: flex;
   background-color: #ffb703;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left {
   display: flex;
   background-color: #f2e9e4;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .img{
+    max-width: fit-content;
+    max-height:inherit;
     border: 2px, solid, transparent;
     border-radius: 5%;
+
 }

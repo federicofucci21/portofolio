@@ -1,5 +1,5 @@
 import React from "react";
-import fotoprueba1 from "../../IMG/fotoprueba1.jpeg";
+import fotoprueba2 from "../../IMG/memoji1.png";
 import AboutLanding from "./AboutLanding";
 
 import style from "./Landing.module.css";
@@ -11,7 +11,7 @@ function Landing() {
         <AboutLanding />
       </div>
       <div class={style.rigth}>
-        <img class={style.img}  alt="FOTO" src={fotoprueba1} />
+        <img class={style.img}  alt="FOTO" src={fotoprueba2} />
       </div>
     </div>
   );
