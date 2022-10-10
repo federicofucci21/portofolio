@@ -1,8 +1,12 @@
 import React from "react";
 import style from "./Home.module.css";
 import NavBar from "../NavBar/NavBar";
+import Education from "../Education/Education"
+import { dataEducation } from "../../Assets/data";
+import LoadingPage from "../LoadingPage/loadingPage";
 
 function Home() {
+  console.log(dataEducation)
   return (
     <div class={style.home}>
       <NavBar />
@@ -24,24 +28,20 @@ function Home() {
         </div>
         <div class={style.educationTittle}>Education</div>
         <div class={style.education}>
-          <div class={style.educationDiv}>
-            <span class={style.institution}>Henry</span>
-            <span class={style.titulo}>Full Stack Web Developer</span>
-            <span class={style.time}>March 2022 / October 2022</span>
-            <span class={style.where}>Rosario, Santa Fe</span>
-          </div>
-          <div class={style.educationDiv}>
-            <span class={style.institution}>ISTM</span>
-            <span class={style.titulo}>Radiologist</span>
-            <span class={style.time}>March 2011 / December 2016</span>
-            <span class={style.where}>Rosario, Santa Fe</span>
-          </div>
-          <div class={style.educationDiv}>
-            <span class={style.institution}>EET 6</span>
-            <span class={style.titulo}>Electromechanical technician</span>
-            <span class={style.time}>March 2001 / December 2006</span>
-            <span class={style.where}>San Nicolas, Buenos Aires</span>
-          </div>
+          {
+            dataEducation.legth<1
+            ? (
+              dataEducation.map((e)=>(
+                <Education
+                institution={e.institution}
+                titulo={e.titulo}
+                time={e.time}
+                where={e.where}
+                />
+              ))
+            )
+            : <LoadingPage/>
+          }
         </div>
       </section>
     </div>
