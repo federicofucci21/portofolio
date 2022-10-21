@@ -1,15 +1,16 @@
 import React from "react";
 import style from "./Home.module.css";
 import NavBar from "../NavBar/NavBar";
-import Education from "../Education/Education"
+import Education from "../Education/Education";
 import { dataEducation } from "../../Assets/data";
 import LoadingPage from "../LoadingPage/loadingPage";
+import Contact from "../Contact/Contact";
+import Proyects from "../Proyects/Proyects"
 
 function Home() {
-  console.log(dataEducation)
   return (
-    <div class={style.home}>
-      <NavBar />
+    <div id="about" class={style.home}>
+      {/* <NavBar /> */}
       <section class={style.section}>
         <div class={style.tittle}>About Me</div>
         <div class={style.text}>
@@ -28,22 +29,23 @@ function Home() {
         </div>
         <div class={style.educationTittle}>Education</div>
         <div class={style.education}>
-          {
-            dataEducation.legth<1
-            ? (
-              dataEducation.map((e)=>(
-                <Education
+          {dataEducation.length > 0 ? (
+            dataEducation.map((e) => (
+              <Education
                 institution={e.institution}
                 titulo={e.titulo}
                 time={e.time}
                 where={e.where}
-                />
-              ))
-            )
-            : <LoadingPage/>
-          }
+              />
+            ))
+          ) : (
+            <LoadingPage />
+          )}
         </div>
       </section>
+      {/* <section>
+        <Proyects id="proyects"/>
+      </section> */}
     </div>
   );
 }

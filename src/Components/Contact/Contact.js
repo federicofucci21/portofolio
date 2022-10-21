@@ -4,10 +4,10 @@ import style from "./Contact.module.css"
 
 function Contact() {
   return (
-    <div class={style.div}>
-      <NavBar />
+    <div id="contact" class={style.div}>
+      {/* <NavBar /> */}
       <section class={style.section}>
-
+    <h1>Contact</h1>
       </section>
     </div>
   )

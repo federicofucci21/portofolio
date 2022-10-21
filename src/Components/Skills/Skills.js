@@ -5,10 +5,10 @@ import style from "./Skills.module.css"
 
 function Skills() {
   return (
-    <div class={style.div}>
-    <NavBar />
+    <div id="skills" class={style.div}>
+    {/* <NavBar /> */}
     <section class={style.section}>
-
+    <h1>Skills</h1>
     </section>
   </div>
   )

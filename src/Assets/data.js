@@ -1,3 +1,8 @@
+import countriesapp from "../IMG/countriesapp.png"
+import caneapp from "../IMG/caneapp.png"
+
+console.log(caneapp)
+
 export const dataEducation = [
     {
         institution: "Henry",
@@ -16,6 +21,19 @@ export const dataEducation = [
         titulo: "Electromechanical technician",
         time: "March 2001 / December 2006",
         where: "San Nicolas, Buenos Aires"
+    }
+]
+
+export const dataProyects = [
+    {
+        name: "Cane-App",
+        img: caneapp,
+        link: "https://cane-food.vercel.app/"
+    },
+    {
+        name: "Countries-App",
+        img: countriesapp,
+        link: "https://countries-app-one-kohl.vercel.app/"
     }
 ]
 
