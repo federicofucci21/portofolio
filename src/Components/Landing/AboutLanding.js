@@ -10,7 +10,7 @@ function AboutLanding() {
         <h1 class={style.name}>Here Federico!</h1>
         <h3>I´m a Full Stack Web Debeloper</h3>
         <h3>Do you want to know more about me?</h3>
-        <Link class={style.link} to="/about">
+        <Link class={style.link} to="/port">
           Let's Start the Ride
         </Link>
       </div>

@@ -11,7 +11,7 @@ import Contact from "./Components/Contact/Contact";
 function App() {
   return (
     <>
-    <Landing/>
+    {/* <Landing/> */}
     <div class={style.App}>
       <NavBar/>
       <div>

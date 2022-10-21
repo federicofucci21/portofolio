@@ -8,7 +8,10 @@ function Skills() {
     <div id="skills" class={style.div}>
     {/* <NavBar /> */}
     <section class={style.section}>
-    <h1>Skills</h1>
+      <div class={style.tittle}>Skills</div>
+      <div class={style.proyects}>
+        
+      </div>
     </section>
   </div>
   )

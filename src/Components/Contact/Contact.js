@@ -7,8 +7,11 @@ function Contact() {
     <div id="contact" class={style.div}>
       {/* <NavBar /> */}
       <section class={style.section}>
-    <h1>Contact</h1>
-      </section>
+      <div class={style.tittle}>Contact</div>
+      <div class={style.proyects}>
+        
+      </div>
+    </section>
     </div>
   )
 }

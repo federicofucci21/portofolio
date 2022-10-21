@@ -6,6 +6,10 @@
   background-color: rgb(210, 205, 205);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
