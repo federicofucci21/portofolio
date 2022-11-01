@@ -1,6 +1,17 @@
 .div {
-  width: 80%;
-  height: 80%;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  /* text-align: center; */
+}
+.divD {
+
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;

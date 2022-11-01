@@ -32,10 +32,11 @@ function NavBar() {
         onClick={() => toggle()}
         className={style.nav__label}
       >
-        <div className={style.btn_hmb} id="btn_hmb">
-          <div className={style.linea1} id="linea1"></div>
-          <div className={style.linea2} id="linea2"></div>
-          <div className={style.linea3} id="linea3"></div>
+        
+        <div class={theme === "light" ? style.btn_hmb : style.btn_hmbD} id="btn_hmb">
+          <div class={theme === "light" ? style.linea1 : style.linea1D} id="linea1"></div>
+          <div class={theme === "light" ? style.linea2 : style.linea2D} id="linea2"></div>
+          <div class={theme === "light" ? style.linea3 : style.linea3D} id="linea3"></div>
         </div>
       </label>
       <input
@@ -44,7 +45,9 @@ function NavBar() {
         checked={openMenu}
         className={style.nav__input}
       />
-      <div class={style.linksSection}>
+
+
+      <div class={theme === "light" ? style.linksSection : style.linksSectionD}>
         <a
           href="/home/#about"
           onClick={() => toggle()}

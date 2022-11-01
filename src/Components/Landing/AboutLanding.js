@@ -12,7 +12,7 @@ function AboutLanding() {
 
   return (
     <div>
-      <div class={style.div}>
+      <div class={theme==="light"?style.div:style.divD}>
         <h2 class={theme==="light"?style.hello:style.helloD}>{lang==="eng"?("Hello!"):("Hola!")}</h2>
         <h1 class={theme==="light"?style.name:style.nameD}>{lang==="eng"?("Here Federico!"):("Aqui Federico!")}</h1>
         <h3 class={theme==="light"?style.h3:style.h3D}>{lang==="eng"?("I´m a Full Stack Web Developer"):("Soy desarrollador web Full Stack")}</h3>

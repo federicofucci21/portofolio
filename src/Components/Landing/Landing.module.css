@@ -1,10 +1,11 @@
 .landing {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
-  max-height: fit-content;
+  /* max-height: fit-content; */
+
   /* margin-left: 18rem; */
 }
 
@@ -49,12 +50,23 @@
     flex-direction: column-reverse;
     height: 98vh;
   }
+  .landingD {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 98vh;
+  }
 
   .rigth {
     max-height: 50vh;
   }
+  .rigthD {
+    max-height: 50vh;
+  }
 
   .left {
+    height: 50vh;
+  }
+  .leftD {
     height: 50vh;
   }
 }
