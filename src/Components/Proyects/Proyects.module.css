@@ -3,7 +3,7 @@
   height: 100vh;
   align-items: center;
   background-color: rgb(210, 205, 205);
-  width: fit-content;
+  width: auto;
   margin-left: 18rem;
 }
 
@@ -59,4 +59,7 @@
     flex-direction: column;
     max-height: fit-content;
   }
+  .tittle{
+    font-size: 3em;
+}
 }
