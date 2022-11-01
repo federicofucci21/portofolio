@@ -7,6 +7,7 @@ import { changeOpenMenu } from "../../Redux/Actions/Actions";
 
 function NavBar() {
   const theme = ReactRedux.useSelector((state) => state.theme);
+  const lang = ReactRedux.useSelector((state) => state.lang);
   const openMenu = ReactRedux.useSelector((state) => state.openMenu);
   const dispatch = ReactRedux.useDispatch();
   const navigate = useNavigate();
@@ -49,28 +50,28 @@ function NavBar() {
           onClick={() => toggle()}
           class={theme === "light" ? style.links : style.linksD}
         >
-          About
+          {lang === "eng" ? "About" : "Sobre mi"}
         </a>
         <a
           href="/home/#proyects"
           onClick={() => toggle()}
           class={theme === "light" ? style.links : style.linksD}
         >
-          Proyects
+          {lang === "eng" ? "Proyects" : "Proyectos"}
         </a>
         <a
           href="/home/#skills"
           onClick={() => toggle()}
           class={theme === "light" ? style.links : style.linksD}
         >
-          Skills
+          {lang === "eng" ? "Skills" : "Habilidades"}
         </a>
         <a
           href="/home/#contact"
           onClick={() => toggle()}
           class={theme === "light" ? style.links : style.linksD}
         >
-          Contact
+          {lang === "eng" ? "Contact" : "Contacto"}
         </a>
       </div>
     </div>

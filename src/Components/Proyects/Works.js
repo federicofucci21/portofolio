@@ -4,7 +4,7 @@ import style from "./Works.module.css";
 
 function Works(data) {
   return (
-    <a href={data.link} target="_blank" rel="noreferrer">
+    <a class={style.a} href={data.link} target="_blank" rel="noreferrer">
       <div class={style.proyectsDiv}>
         <span class={style.name}>{data.name}</span>
         <img class={style.img} alt="FOTO" src={data.img} />

@@ -2,45 +2,55 @@ import React from "react";
 import style from "./About.module.css";
 import NavBar from "../NavBar/NavBar";
 import Education from "../Education/Education";
-import { dataEducation } from "../../Assets/data";
+import { dataEducation, dataParrafo } from "../../Assets/data";
 import LoadingPage from "../LoadingPage/loadingPage";
-import Contact from "../Contact/Contact";
-import Proyects from "../Proyects/Proyects"
+import * as ReactRedux from "react-redux";
 
 function About() {
+  const lang = ReactRedux.useSelector((state) => state.lang);
+
+  // {lang==="eng"?("About Me"):("Sobre mi")}
+
   return (
     <div id="about" class={style.home}>
       {/* <NavBar /> */}
       <section class={style.section}>
-        <div class={style.tittle}>About Me</div>
+        <div class={style.tittle}>
+          {lang === "eng" ? "About Me" : "Sobre mi"}
+        </div>
         <div class={style.text}>
           <tittle>
-            I´m <span class={style.name}>Federico Fucci</span>, Full Stack Web
-            Developer
+            {lang === "eng" ? "I´m" : "Soy"}{" "}
+            <span class={style.name}>Federico Fucci</span>
+            {lang === "eng"
+              ? ", Full Stack Web Developer"
+              : ", desarrollador web full stack"}
           </tittle>
           <p>
-            I am currently carrying out a clear objective: insert myself into IT
-            world. That's why I took my first steps as a "Full Stack Web
-            Developer" with Henry. My life experiences have given me great
-            decision-making and leadership skills, as well as the need to test
-            myself in changing situations and acquire essential knowledge on my
-            own. I found in web development and the IT universe my true passion.
+          {lang === "eng"
+              ? dataParrafo.eng
+              : dataParrafo.esp}
           </p>
         </div>
-        <div class={style.educationTittle}>Education</div>
+        <div class={style.educationTittle}>{lang === "eng" ? "Education" : "Educación"}</div>
         <div class={style.education}>
-          {dataEducation.length > 0 ? (
-            dataEducation.map((e) => (
-              <Education
-                institution={e.institution}
-                titulo={e.titulo}
-                time={e.time}
-                where={e.where}
-              />
-            ))
-          ) : (
-            <LoadingPage />
-          )}
+          {lang === "eng"
+            ? dataEducation.eng.map((e) => (
+                <Education
+                  institution={e.institution}
+                  titulo={e.titulo}
+                  time={e.time}
+                  where={e.where}
+                />
+              ))
+            : dataEducation.esp.map((e) => (
+                <Education
+                  institution={e.institution}
+                  titulo={e.titulo}
+                  time={e.time}
+                  where={e.where}
+                />
+              ))}
         </div>
       </section>
       {/* <section>
@@ -51,3 +61,16 @@ function About() {
 }
 
 export default About;
+
+dataEducation.length > 0 ? (
+  dataEducation.map((e) => (
+    <Education
+      institution={e.institution}
+      titulo={e.titulo}
+      time={e.time}
+      where={e.where}
+    />
+  ))
+) : (
+  <LoadingPage />
+);
