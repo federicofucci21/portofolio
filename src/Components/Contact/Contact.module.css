@@ -7,6 +7,15 @@
     margin-left: 18rem;
   }
 
+  @media (max-width: 480px) {
+    .div {
+    max-height: 100%;
+    max-width: 100%; 
+    flex-direction: column;
+    margin: 0;
+    }
+  }
+
   .section {
     padding: 5rem;
     border: 3px solid transparent;

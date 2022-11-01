@@ -1,49 +1,63 @@
 .div {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    background-color: rgb(210, 205, 205);
-    width: auto;
-    margin-left: 18rem;
-  }
-
-  .section {
-    padding: 5rem;
-    border: 3px solid transparent;
-    background-color: rgb(194, 187, 187);
-    height: 100%;
-    width: 100%;
-  }
-
-  .tittle{
-    display: flex;
-    font-size: 5rem;
-    font-family: 'Anton', sans-serif;
-    color:black;
-    border: 0.5px solid black;
-    justify-content:center;
-    align-items: center;
-    height: 7rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(210, 205, 205);
+  width: fit-content;
+  margin-left: 18rem;
 }
 
-.proyects{
-  margin-top:5rem;
+
+.section {
+  padding: 5rem;
+  border: 3px solid transparent;
+  background-color: rgb(194, 187, 187);
+  height: 100%;
+  width: 100%;
+}
+
+.tittle {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  color: black;
+  border: 0.5px solid black;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.proyects {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.proyectsDiv{
+.proyectsDiv {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   border-top: 0.3px solid black;
   border-bottom: 0.5px solid black;
-
 }
 
-.img{
+.img {
   max-width: 19rem;
   margin-bottom: 30px;
-  margin-top:3px
+  margin-top: 3px;
+}
+
+@media (max-width: 480px) {
+  .div {
+    max-height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .proyects {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    }
 }

@@ -1,0 +1,32 @@
+.switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 2rem;
+    background-color: grey;
+    border-radius: 30%;
+    position: fixed;
+    cursor: pointer;
+    z-index: 100;
+    margin-top: .5em;
+    margin-left: 5em;
+    
+}
+
+@media (max-width: 540px) {
+    .switch{
+        
+        margin-top: 3em;
+        margin-left: .5em;
+    }
+}
+
+
+@media (min-width: 540px) {
+    .switch{
+        
+       
+    }
+}
+

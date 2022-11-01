@@ -1,17 +1,19 @@
 import React from "react";
 import fotoprueba2 from "../../IMG/memoji1.png";
 import AboutLanding from "./AboutLanding";
-
+import * as ReactRedux from "react-redux";
 import style from "./Landing.module.css";
 
 function Landing() {
+  const theme = ReactRedux.useSelector((state) => state.theme);
+
   return (
     <div class={style.landing}>
-      <div class={style.left}>
+      <div class={theme==="light"?style.left:style.leftD}>
         <AboutLanding />
       </div>
-      <div class={style.rigth}>
-        <img class={style.img}  alt="FOTO" src={fotoprueba2} />
+      <div class={theme==="light"?style.rigth:style.rigthD}>
+        <img class={style.img} alt="FOTO" src={fotoprueba2} />
       </div>
     </div>
   );

@@ -11,8 +11,18 @@
 .hello {
   font-family: "Permanent Marker", cursive;
 }
+
+.helloD{
+  font-family: "Permanent Marker", cursive;
+  color:rgb(146, 89, 89);
+}
 .name {
   font-family: "Alfa Slab One", cursive;
+}
+
+.nameD {
+  font-family: "Alfa Slab One", cursive;
+  color:rgb(146, 89, 89);
 }
 
 .link {
@@ -33,4 +43,29 @@
   background-color: #ffb703;
   transition-duration: 700ms;
 
+}
+
+.linkD {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 600;
+  color: rgb(146, 89, 89);
+  border: 0.5px solid rgb(146, 89, 89);
+  border-radius: 15%;
+  /* width: 10rem; */
+  box-shadow: 1px 2px rgb(154, 145, 145);
+}
+.linkD:hover {
+  font-weight: 900;
+  background-color: #38093e;;
+  transition-duration: 700ms;
+  scale: 1.1;
+}
+
+.h3D{
+  font-family: "Permanent Marker", cursive;
+  color:rgb(146, 89, 89);
 }
