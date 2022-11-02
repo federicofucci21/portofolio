@@ -2,14 +2,12 @@
   /* position:initial; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 45rem;
   align-items: center;
   background-color: rgb(210, 205, 205);
   /* width: auto; */
   margin-left: 18rem;
 }
-
-
 
 .section {
   padding: 5rem;
@@ -19,91 +17,100 @@
   width: 100%;
 }
 
-/* .aboutme {
+.tittle {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
   color: black;
-  font-size: xx-large;
-  align-content: center;
-  justify-items: center;
-  border: 1px solid black;
-  padding: 0.5rem;
-} */
-
-.tittle{
-    display: flex;
-    font-size: 5rem;
-    font-family: 'Anton', sans-serif;
-    color:black;
-    border: 0.5px solid black;
-    justify-content:center;
-    align-items: center;
-    height: 7rem;
+  border: 0.5px solid black;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
 }
 
-.name{
+.name {
   font-weight: bold;
 }
 
-.text{
-  margin-top:3rem;
+.text {
+  margin-top: 3rem;
 }
 
-.educationTittle{
+.educationTittle {
   display: flex;
   margin-top: 3rem;
   /* justify-content:center; */
   /* align-items: center; */
-  font-family: 'Anton', sans-serif;
-
+  font-family: "Anton", sans-serif;
 }
 
-.education{
-  margin-top:2rem;
+.education {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.educationDiv{
+.educationDiv {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: flex-start;
   align-items: center;
   border-top: 0.3px solid black;
   border-bottom: 0.5px solid black;
-
 }
 
-.institution{
+.institution {
   background-color: #ffb80389;
   border-radius: 25%;
   padding: 4px;
   margin-bottom: 3px;
-  margin-top:20px
+  margin-top: 20px;
 }
 
-.titulo{
+.titulo {
   font-weight: bold;
   margin-bottom: 3px;
-  margin-top:3px
+  margin-top: 3px;
 }
 
-.time{
+.time {
   margin-bottom: 3px;
-  margin-top:3px
+  margin-top: 3px;
 }
 
-.where{
+.where {
   margin-bottom: 30px;
-  margin-top:3px
+  margin-top: 3px;
 }
 
 @media (max-width: 480px) {
   .home {
-  max-height: 100%;
-  max-width: 100%; 
-  flex-direction: column;
-  margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 0;
   }
-  .tittle{
+  .section {
+    padding: 1rem;
+  }
+  .tittle {
     font-size: 3em;
-}
+    height: 5rem;
+  }
+  .text {
+    margin-top: 1.5rem;
+  }
+  .education {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .educationDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 0.3px solid black;
+    border-bottom: 0.5px solid black;
+  }
 }

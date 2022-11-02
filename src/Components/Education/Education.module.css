@@ -2,18 +2,22 @@
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;
+    /* align-items: center; */
     border-top: 0.3px solid black;
     border-bottom: 0.5px solid black;
   
   }
   
   .institution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffb80389;
     border-radius: 25%;
     padding: 4px;
     margin-bottom: 3px;
-    margin-top:20px
+    margin-top:20px;
+    width: 4rem;
   }
   
   .titulo{
@@ -30,4 +34,31 @@
   .where{
     margin-bottom: 30px;
     margin-top:3px
+  }
+
+  @media (max-width: 480px) {
+    .educationDiv {
+      justify-content:flex-start;
+    }
+
+    .institution{
+      border-radius: 25%;
+      padding: 4px;
+      margin-bottom: 1px;
+      margin-top:1px;
+    }
+    .titulo{
+      margin-bottom: 1px;
+      margin-top:3px
+    }
+    
+    .time{
+      margin-bottom: 1px;
+      margin-top:1px
+    }
+    
+    .where{
+      margin-bottom: 2px;
+      margin-top:1px
+    }
   }
