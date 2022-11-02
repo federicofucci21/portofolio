@@ -8,6 +8,16 @@
 
   /* margin-left: 18rem; */
 }
+.landingD {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /* max-height: fit-content; */
+
+  /* margin-left: 18rem; */
+}
 
 .rigth {
   display: flex;

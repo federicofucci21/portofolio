@@ -8,7 +8,7 @@ function Landing() {
   const theme = ReactRedux.useSelector((state) => state.theme);
 
   return (
-    <div class={style.landing}>
+    <div class={theme==="light"?style.landing:style.landingD}>
       <div class={theme==="light"?style.left:style.leftD}>
         <AboutLanding />
       </div>

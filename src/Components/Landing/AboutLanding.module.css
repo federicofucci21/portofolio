@@ -1,21 +1,21 @@
 .div {
 
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   /* text-align: center; */
 }
 .divD {
 
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   /* text-align: center; */
 }
 
@@ -46,7 +46,7 @@
   color: black;
   border: 0.5px solid black;
   border-radius: 15%;
-  /* width: 10rem; */
+  width: 15rem;
   box-shadow: 3px 3px black;
 }
 .link:hover {
@@ -66,7 +66,7 @@
   color: rgb(146, 89, 89);
   border: 0.5px solid rgb(146, 89, 89);
   border-radius: 15%;
-  /* width: 10rem; */
+  width: 15rem;
   box-shadow: 1px 2px rgb(154, 145, 145);
 }
 .linkD:hover {
@@ -75,7 +75,10 @@
   transition-duration: 700ms;
   scale: 1.1;
 }
-
+.h3{
+  font-family: "Permanent Marker", cursive;
+  color:black
+}
 .h3D{
   font-family: "Permanent Marker", cursive;
   color:rgb(146, 89, 89);
