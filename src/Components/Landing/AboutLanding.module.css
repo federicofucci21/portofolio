@@ -1,7 +1,7 @@
 .div {
 
   width: 20rem;
-  height: 30rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@
 .divD {
 
   width: 20rem;
-  height: 30rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
