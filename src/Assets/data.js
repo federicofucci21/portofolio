@@ -66,6 +66,31 @@ export const dataProyects = [
 
 ]
 
+export const dataProyects1 = {
+    CaneApp:{
+        name: "Cane-App",
+        img: caneapp,
+        link: "https://cane-food.vercel.app/"
+    },
+    CountriesApp:{
+        name: "Countries-App",
+        img: countriesapp,
+        link: "https://countries-app-one-kohl.vercel.app/"
+    },
+    BacoFusion:{
+        name: "Baco Fusión",
+        img: bacofusion,
+        link: "https://bacofusion.vercel.app/"
+    },
+    any:{
+        name: "Comming soon...",
+        img: "Comming soon...",
+        link: "Comming soon.../"
+    }
+
+}
+
+
 
 
 export const dataParrafo = {

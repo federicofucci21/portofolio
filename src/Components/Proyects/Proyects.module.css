@@ -28,11 +28,42 @@
 
 .proyects {
   margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
-.proyectsDiv {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 13rem;
+}
+
+.btnNavbar {
+  display: flex;
+  margin: 2px;
+  cursor: pointer;
+  border: 0.5px solid black;
+  height: 100%;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 5px;
+}
+
+.workView {
+  width: 70%;
+  height: 13rem;
+  border: 2px solid black;
+  background-color: rgb(180, 177, 177);
+}
+.workViewD {
+  width: 70%;
+  height: 13rem;
+  border: 2px solid black;
+  background-color: #593560;
+}
+/* .proyectsDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +76,7 @@
   max-width: 19rem;
   margin-bottom: 30px;
   margin-top: 3px;
-}
+} */
 
 @media (max-width: 480px) {
   .div {
@@ -59,7 +90,10 @@
     flex-direction: column;
     max-height: fit-content;
   }
-  .tittle{
+  .tittle {
     font-size: 3em;
+  }
 }
-}
+
+
+/* https://brittanychiang.com/ */
