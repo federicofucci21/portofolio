@@ -1,32 +1,129 @@
-.a {
-  text-decoration: none;
-  color: black;
-}
-
-.proyectsDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 0.3px solid black;
-  border-bottom: 0.5px solid black;
+.card{
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.483);
+  border-radius: 10px;
+  gap: 5px;
+  width: 30rem;
+  height: 38rem;
   padding: 5px;
 }
+.tittle{
+  
+  border-radius: 10px;
+  display: flex;
+  font-family: "Anton", sans-serif;
+  height:2rem;
+  align-items: center;
+  justify-content: center;
+}
+.imgCont{
 
-.name {
-  font-weight: bold;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+
 }
 
 .img {
-  max-width: 19rem;
-  margin-bottom: 30px;
-  margin-top: 3px;
-  /* border: 1px solid black; */
-  border-radius: 5%;
-  box-shadow: 2px 3px rgb(40, 39, 39);
+  width: 28rem;
+  /* margin-bottom: 30px;
+  margin-top: 3px; */
+  border-radius: 3%;
+ border: 0.3px solid black;
 }
 .img:hover {
-  scale: 1.1;
+  scale: 1.3;
 }
+
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  height: 8rem;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+.tecnologies{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  height: 5rem;
+  border-bottom: 1px dashed black;
+}
+
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border: 3px groove black;
+  padding: 4px;
+  width: 6rem;
+  transition: 0.4ms;
+}
+.a:hover{
+  border: 3px groove white;
+  background-color: #ffb80371;
+}
+
+.link{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+}
+
+@media (max-width: 480px) {
+  .card{
+    width: 30rem;
+    height: 43rem;
+    padding: 5px;
+  }
+  .imgCont{
+    height: 150px;
+  }
+  
+  .img {
+    width: 15rem;
+  }
+  
+  .description{
+    height: 15rem;
+  }
+  .tecnologies{
+    height: 8rem;
+  }
+  
+  .a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border: 3px groove black;
+    padding: 4px;
+    width: 6rem;
+    transition: 0.4ms;
+  }
+  .a:hover{
+    border: 3px groove white;
+    background-color: #ffb80371;
+  }
+  
+  .link{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+  }
+  
+}
+

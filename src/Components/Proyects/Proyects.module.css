@@ -1,18 +1,39 @@
 .div {
   display: flex;
-  height: 58rem;
+  flex-direction: column;
+  height: 60rem;
   align-items: center;
-  background-color: rgb(210, 205, 205);
+  background-color: rgb(194, 187, 187);
   width: auto;
   margin-left: 18rem;
+  border-top: 1.5px dashed black;
+  border-bottom: 1.5px dashed black;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.divD {
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  align-items: center;
+  background-color: #0e0e0d;
+  width: auto;
+  margin-left: 18rem;
+  border-top: 2px dashed rgb(146, 89, 89);
+  border-bottom: 2px dashed rgb(146, 89, 89);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .section {
   padding: 5rem;
   border: 3px solid transparent;
-  background-color: rgb(194, 187, 187);
+  /* background-color: rgb(194, 187, 187); */
   height: 100%;
   width: 100%;
+
 }
 
 .tittle {
@@ -25,41 +46,209 @@
   align-items: center;
   height: 7rem;
 }
+.tittleD {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  color: rgb(146, 89, 89);
+  border: 0.5px solid rgb(146, 89, 89);
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
 
 .proyects {
   margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.proyectsDiv {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 0.3px solid black;
-  border-bottom: 0.5px solid black;
+  /* justify-content: space-evenly; */
+  height: 40rem;
+  border: 1px solid black;
+}
+.proyectsD {
+  margin-top: 5rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  height: 40rem;
+  border: 1px solid rgb(146, 89, 89);
 }
 
-.img {
-  max-width: 19rem;
-  margin-bottom: 30px;
-  margin-top: 3px;
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: 0;
+  flex-direction: column;
+  width: 11rem;
+  height: 100%;
+  /* border: 1px solid black; */
 }
+
+.btnNavbar {
+  display: flex;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  border-left: 2px solid black;
+  border-top: 2px groove black;
+  border-right: 2px groove black;
+  border-bottom: 2px groove black;
+  height: 4rem;
+  width: 9rem;
+  align-items: center;
+  padding-left: 5px;
+  transition: 0.1ms;
+  margin: 5px;
+}
+.btnNavbar:hover {
+  border-left: 2px solid white;
+  background-color: #ffb80371;
+}
+.btnNavbarD {
+  display: flex;
+  cursor: pointer;
+  color:rgb(146, 89, 89) ;
+  /* border: 1px solid black; */
+  border-left: 2px solid rgb(146, 89, 89);
+  border-top: 2px groove black;
+  border-right: 2px groove black;
+  border-bottom: 2px groove black;
+  height: 4rem;
+  width: 9rem;
+  align-items: center;
+  padding-left: 5px;
+  transition: 0.1ms;
+  margin: 5px;
+}
+.btnNavbarD:hover {
+  color: black;
+  border-left: 2px solid white;
+  background-color: #ffb80371;
+}
+
+
+.btnNavbar:active {
+  border-left: 2px solid white;
+  background-color: #ffb80371;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid black;
+  width: 70%;
+  height: 100%;
+  animation: 7s anim-card ease;
+}
+.cardD{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgb(146, 89, 89);
+  width: 70%;
+  height: 100%;
+  animation: 7s anim-card ease;
+}
+
+/* animation-delay: 5s; */
+
+@keyframes anim-card {
+0% {
+  opacity: 0;
+  transform: translatex(80%);
+}
+20% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+  transform: translatex(40%);
+}
+100% {
+  opacity: 1;
+  transform: translatex(0%);
+}
+}
+
+
 
 @media (max-width: 480px) {
   .div {
-    max-height: 100%;
-    max-width: 100%;
+    height: 80rem;
+    width: 100%;
     flex-direction: column;
     margin: 0;
+  }
+  .divD{
+    height: 80rem;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .section {
+    padding: 1rem;
+  }
+  .sectionD {
+    padding: 1rem;
   }
   .proyects {
     display: flex;
     flex-direction: column;
-    max-height: fit-content;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60rem;
   }
-  .tittle{
+  .proyectsD {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60rem;
+  }
+  .tittle {
     font-size: 3em;
+  }
+  .tittleD {
+    font-size: 3em;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 6rem;
+    gap: 3px;
+  }
+  .navbarD {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 6rem;
+    gap: 3px;
+  }
+  .btnNavbar {
+    border-left: 2px solid black;
+    height: 3rem;
+    margin: 1px;
+  }
+  .btnNavbarD {
+    border-left: 2px solid black;
+    height: 3rem;
+    margin: 1px;
+  }
+
+  .card{
+    border-left: 2px solid transparent;
+    width: 20rem;
+  }
+  .cardD{
+    border-left: 2px solid transparent;
+    width: 20rem;
+  }
 }
-}
+
+/* https://brittanychiang.com/ */
