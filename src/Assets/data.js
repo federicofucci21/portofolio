@@ -69,23 +69,39 @@ export const dataProyects = [
 export const dataProyects1 = {
     CaneApp:{
         name: "Cane-App",
+        dev: "Full-Stack",
         img: caneapp,
-        link: "https://cane-food.vercel.app/"
+        demo: "https://cane-food.vercel.app/",
+        github:"https://github.com/federicofucci21/CaneFront",
+        description: "E-Commerce developed for Cané Medallones Vegetarianos. SingUp. Login. Roles. Administer DashBoard. Payments. Cart.",
+        tecnologies: "ReactJS / Redux / Ant Desing / Boostrap / NodeJS / ExpressJS / Sequelize / PostgreSQL / JavaScript / SCRUM"
     },
     CountriesApp:{
         name: "Countries-App",
+        dev: "Full-Stack",
         img: countriesapp,
-        link: "https://countries-app-one-kohl.vercel.app/"
+        demo: "https://countries-app-one-kohl.vercel.app/",
+        github:"https://github.com/federicofucci21/PI-Countries-Henry",
+        description: "Individual Proyect from Henry. This app takes data from an external API and shows in form of cards  info for each country. Beside you can create activitias and vinculate with countries. Filters and orders for cards.",
+        tecnologies: "ReactJS / Redux / Css / NodeJS / ExpressJS / Sequelize / PostgreSQL / JavaScript"
     },
     BacoFusion:{
         name: "Baco Fusión",
+        dev: "Front-End",
         img: bacofusion,
-        link: "https://bacofusion.vercel.app/"
+        demo: "https://bacofusion.vercel.app/",
+        github:"https://github.com/federicofucci21/Baco-Fusion-App",
+        description: "Web page developed for BACO restaurant palced on Entre Rios. Includes landing page with an advertisements carousel, photo-galery, a complete menu-page with auto-scroll, booking page with integrated whatsapp and googlemaps",
+        tecnologies:"ReactJS / Redux Toolkit / Ant Desing / Boostrap / TypeScript / JavaScript / SCRUM"
     },
     any:{
         name: "Comming soon...",
+        dev: "Full-Stack",
         img: "Comming soon...",
-        link: "Comming soon.../"
+        demo: "https://federicofucci.vercel.app/",
+        github:"https://github.com/federicofucci21",
+        description: "Comming soon...",
+        tecnologies: "Comming soon..."
     }
 
 }
