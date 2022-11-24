@@ -5,6 +5,7 @@ import { dataEducation, dataParrafo } from "../../Assets/data";
 import LoadingPage from "../LoadingPage/loadingPage";
 import * as ReactRedux from "react-redux";
 import MeHi from "../../IMG/Mehi .png"
+import CV from "../../Assets/CV - Federico Eloy Fucci - 2022 (2).pdf"
 
 function About() {
   const lang = ReactRedux.useSelector((state) => state.lang);
@@ -12,21 +13,20 @@ function About() {
 
   return (
     <div id="about" class={theme === "light" ?style.home:style.homeD}>
-      <div class={theme === "light" ?style.div1:style.div1D}></div>
-      <div class={theme === "light" ?style.div2:style.div2D}></div>
       <section class={style.section}>
         <div class={theme === "light" ?style.tittle:style.tittleD}>
           {lang === "eng" ? "About Me" : "Sobre mi"}
         </div>
         <div class={theme === "light" ?style.text:style.textD}>
           <span>
-          <tittle>
+          <span class={theme === "light" ?style.mySpan:style.mySpanD}>
             {lang === "eng" ? "I´m" : "Soy"}{" "}
             <span class={theme === "light"?style.name:style.nameD}>Federico Fucci</span>
             {lang === "eng"
-              ? ", Full Stack Web Developer"
-              : ", desarrollador web full stack"}
-          </tittle>
+              ? "Full Stack Web Developer"
+              : "desarrollador web full stack"}
+              <a href={CV} download="CV-Federico Eloy Fucci">Download CV</a>
+          </span>
           <p>{lang === "eng" ? dataParrafo.eng : dataParrafo.esp}</p>
           </span>
           <img class={style.imgMeHi} alt="FOTO" src={MeHi} />
@@ -54,9 +54,6 @@ function About() {
               ))}
         </div>
       </section>
-      {/* <section>
-        <Proyects id="proyects"/>
-      </section> */}
     </div>
   );
 }

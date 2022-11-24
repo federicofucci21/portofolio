@@ -1,41 +1,94 @@
 .div {
   display: flex;
-  height: 58rem;
+  height: 75rem;
   align-items: center;
-  background-color: rgb(210, 205, 205);
+  background-color: rgb(194, 187, 187);
   width: auto;
   margin-left: 18rem;
+  border-top: 1.5px dashed black;
+  border-bottom: 1.5px dashed black;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
-
-  .section {
-    padding: 5rem;
-    border: 3px solid transparent;
-    background-color: rgb(194, 187, 187);
-    height: 100%;
-    width: 100%;
-  }
-
-  .tittle{
-    display: flex;
-    font-size: 5rem;
-    font-family: 'Anton', sans-serif;
-    color:black;
-    border: 0.5px solid black;
-    justify-content:center;
-    align-items: center;
-    height: 7rem;
+.divD {
+  display: flex;
+  height: 75rem;
+  align-items: center;
+  background-color: #0e0e0d;
+  width: auto;
+  margin-left: 18rem;
+  border-top: 2px dashed rgb(146, 89, 89);
+  border-bottom: 2px dashed rgb(146, 89, 89);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
+.section {
+  padding: 5rem;
+  border: 3px solid transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.tittle {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  color: black;
+  border: 0.5px solid black;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+.tittleD {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  color: rgb(146, 89, 89);
+  border: 0.5px solid rgb(146, 89, 89);
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 15rem);
+  padding: 5rem;
+
+}
+.divCard {
+  height: 12rem;
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.imgCard {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+.pCard {
+  color: black;
+}
+.pCardD {
+  color: rgb(146, 89, 89);
+}
 @media (max-width: 480px) {
   .div {
-  max-height: 100%;
-  max-width: 100%; 
-  flex-direction: column;
-  margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 0;
   }
-  .tittle{
+  .tittle {
     font-size: 3em;
+  }
 }
-}
-

@@ -81,19 +81,6 @@
   color: rgb(146, 89, 89);
 }
 
-/* .name {
-  font-weight: 600;
-} */
-
-/* .nameD {
-  font-weight: 600;
-  color: rgb(146, 89, 89);
-} */
-
-
-
-
-
 
 .name {
   font-family: "Roboto Mono", monospace;
@@ -221,7 +208,6 @@
   font-weight: 900;
   background-color: #38093e;
   transition-duration: 700ms;
-  scale: 1.1;
 }
 .h3 {
   color: black;

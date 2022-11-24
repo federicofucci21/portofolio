@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  height: 45rem;
+  height: 50rem;
   align-items: center;
   background-color: rgb(194, 187, 187);
   width: auto;
@@ -15,7 +15,7 @@
 .homeD {
   display: flex;
   flex-direction: column;
-  height: 45rem;
+  height: 50rem;
   align-items: center;
   background-color: #0e0e0d;
   width: auto;
@@ -38,22 +38,6 @@
   width: 50px;
   background-color: rgb(146, 89, 89);
   position: absolute;
-}
-.div1{
-  top: 0px;
-  left: 0px;
-}
-.div1D{
-  top: .5px;
-  left: 0px;
-}
-.div2{
-  bottom: 0px;
-  right: 0px;
-}
-.div2D{
-  bottom: 0px;
-  right: 0px;
 }
 
 .section {
@@ -102,6 +86,49 @@
   justify-content: center;
   align-items: center;
   height: 7rem;
+}
+
+.mySpan{
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 25rem;
+  font-size: larger;
+  margin-bottom: 20px;
+  gap: 2px;
+}
+.mySpan > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size:medium;
+  color: black;
+  border: 2px solid black;
+  margin-top: 5px;
+  padding: 2px;
+  width: 140px;
+}
+.mySpanD{
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 25rem;
+  font-size: larger;
+  margin-bottom: 20px;
+  gap: 2px;
+}
+.mySpanD > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size:medium;
+  color: rgb(146, 89, 89);
+  border: 2px solid rgb(146, 89, 89);
+  margin-top: 5px;
+  padding: 2px;
+  width: 140px;
 }
 
 .name {
