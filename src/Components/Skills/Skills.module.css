@@ -1,6 +1,6 @@
 .div {
   display: flex;
-  height: 75rem;
+  height: 80rem;
   align-items: center;
   background-color: rgb(194, 187, 187);
   width: auto;
@@ -14,7 +14,7 @@
 
 .divD {
   display: flex;
-  height: 75rem;
+  height: 80rem;
   align-items: center;
   background-color: #0e0e0d;
   width: auto;
@@ -98,9 +98,11 @@
   }
   .tittle {
     font-size: 3em;
+    margin:2rem
   }
   .tittleD {
     font-size: 3em;
+    margin:2rem
   }
   .cards {
     padding: .1rem;

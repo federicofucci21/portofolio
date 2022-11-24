@@ -1,18 +1,32 @@
 .div {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    background-color: rgb(210, 205, 205);
-    width: auto;
-    margin-left: 18rem;
-  }
-
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  background-color: rgb(194, 187, 187);
+  width: auto;
+  margin-left: 18rem;
+  border-top: 1.5px dashed black;
+  border-bottom: 1.5px dashed black;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.divD {
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  background-color: #0e0e0d;
+  width: auto;
+  margin-left: 18rem;
+  border-top: 2px dashed rgb(146, 89, 89);
+  border-bottom: 2px dashed rgb(146, 89, 89);
+  margin-top: 1rem;
+  position: relative;
+}
  
 
   .section {
     padding: 5rem;
     border: 3px solid transparent;
-    background-color: rgb(194, 187, 187);
     height: 100%;
     width: 100%;
   }
@@ -27,15 +41,98 @@
     align-items: center;
     height: 7rem;
 }
+.tittleD {
+  display: flex;
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  color: rgb(146, 89, 89);
+  border: 0.5px solid rgb(146, 89, 89);
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  padding: 2rem;
+}
+
+.contactsDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+}
+.contactsDivD{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+}
+.contactsDiv > a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: black;
+}
+.contactsDivD > a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: rgb(146, 89, 89);
+}
+.contactsDiv > a > img{
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+.contactsDivD > a > img{
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  border:1px solid rgb(146, 89, 89);
+  background-color: rgb(146, 89, 89);
+}
+
 
 @media (max-width: 480px) {
   .div {
-  max-height: 100%;
-  max-width: 100%; 
+    height: 80rem;
+    width: 100%;
   flex-direction: column;
   margin: 0;
+  }
+  .divD {
+    height: 30rem;
+   width: 100%;
+  flex-direction: column;
+  margin: 0;
+  }
+  .section {
+    padding: 2rem;
   }
   .tittle{
     font-size: 3em;
 }
+.tittleD{
+  font-size: 3em;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .1rem;
+  width: 20rem;
+}
+
 }

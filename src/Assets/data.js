@@ -11,7 +11,33 @@ import Node from "../IMG/technologies/07-node.png"
 import Express from "../IMG/technologies/08-express.png"
 import PostgreSQL from "../IMG/technologies/09-postgresql.png"
 import MySQL from "../IMG/technologies/10-mysql.png"
+import whatsapp from "../IMG/contact/whatsapp.png"
+import github from "../IMG/contact/github.png"
+import email from "../IMG/contact/email.png"
+import linkedin from "../IMG/contact/linkedin.png"
 
+export const contact = [
+    {
+        name: "GitHub",
+        url: "https://github.com/federicofucci21",
+        img: github
+    },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/federico-eloy-fucci-87664357/",
+        img: linkedin
+    },
+    {
+        name: "Mail",
+        url: "mailto:federicofucci@hotmail.com",
+        img: email
+    },
+    {
+        name: "WhatsApp",
+        url: "https://api.whatsapp.com/send?phone=5493416745943",
+        img: whatsapp
+    },
+]
 
 export const technologies = [
     {
