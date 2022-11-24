@@ -176,16 +176,18 @@
 
 @media (max-width: 480px) {
   .div {
-    height: 80rem;
+    height: 75rem;
     width: 100%;
     flex-direction: column;
     margin: 0;
+    margin-bottom: 1rem;
   }
   .divD{
-    height: 80rem;
+    height: 75rem;
     width: 100%;
     flex-direction: column;
     margin: 0;
+    margin-bottom: 1rem;
   }
   .section {
     padding: 1rem;

@@ -24,10 +24,10 @@ function About() {
             <span class={theme === "light"?style.name:style.nameD}>Federico Fucci</span>
             {lang === "eng"
               ? "Full Stack Web Developer"
-              : "desarrollador web full stack"}
-              <a href={CV} download="CV-Federico Eloy Fucci">Download CV</a>
+              : "Desarrollador Web Full Stack"}
+              <a href={CV} download="CV-Federico Eloy Fucci">{lang === "eng" ? "Download CV" : "Descargar CV"}</a>
           </span>
-          <p>{lang === "eng" ? dataParrafo.eng : dataParrafo.esp}</p>
+          <p class={theme === "light"?style.p:style.pD}>{lang === "eng" ? dataParrafo.eng : dataParrafo.esp}</p>
           </span>
           <img class={style.imgMeHi} alt="FOTO" src={MeHi} />
         </div>

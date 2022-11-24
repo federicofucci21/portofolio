@@ -151,8 +151,6 @@
   color: rgb(146, 89, 89);
 }
 
-
-
 .imgMeHi{
   height: 10rem;
   margin-left: 2rem;
@@ -221,14 +219,14 @@
 
 @media (max-width: 480px) {
   .home {
-    height: 58rem;
+    height: 70rem;
     max-width: 100%;
     flex-direction: column;
     margin: 0;
     margin-bottom: 1rem;
   }
   .homeD {
-    height: 58rem;
+    height: 70rem;
     max-width: 100%;
     flex-direction: column;
     margin: 0;
@@ -248,12 +246,41 @@
     font-size: 3em;
     height: 5rem;
   }
-  .text {
-    margin-top: 1.5rem;
+  .mySpan{
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    width: 15rem;
+    font-size: larger;
+    margin-bottom: 20px;
+    gap: 2px;
   }
-  .textD {
-    margin-top: 1.5rem;
+  .mySpanD{
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    width: 15rem;
+    font-size: larger;
+    margin-bottom: 20px;
+    gap: 2px;
   }
+.text{
+  height: 30rem;
+}
+.textD{
+  height: 30rem;
+}
+  .p {
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+  }
+  .pD {
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
   .education {
     margin-top: 0.5rem;
     display: grid;
