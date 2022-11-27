@@ -2,7 +2,6 @@ import React from "react";
 import style from "./About.module.css";
 import Education from "../Education/Education";
 import { dataEducation, dataParrafo } from "../../Assets/data";
-import LoadingPage from "../LoadingPage/loadingPage";
 import * as ReactRedux from "react-redux";
 import MeHi from "../../IMG/Mehi .png"
 import CV from "../../Assets/CV - Federico Eloy Fucci - 2022 (2).pdf"
@@ -59,16 +58,3 @@ function About() {
 }
 
 export default About;
-
-dataEducation.length > 0 ? (
-  dataEducation.map((e) => (
-    <Education
-      institution={e.institution}
-      titulo={e.titulo}
-      time={e.time}
-      where={e.where}
-    />
-  ))
-) : (
-  <LoadingPage />
-);

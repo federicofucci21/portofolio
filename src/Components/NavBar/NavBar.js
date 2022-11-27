@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./NavBar.module.css";
 import fotoprueba1 from "../../IMG/memoji2.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as ReactRedux from "react-redux";
 import { changeOpenMenu } from "../../Redux/Actions/Actions";
 
@@ -10,16 +10,9 @@ function NavBar() {
   const lang = ReactRedux.useSelector((state) => state.lang);
   const openMenu = ReactRedux.useSelector((state) => state.openMenu);
   const dispatch = ReactRedux.useDispatch();
-  const navigate = useNavigate();
 
   const toggle = () => {
     dispatch(changeOpenMenu());
-  };
-
-  const goTo = (path) => {
-    toggle();
-    // document.getElementById(`${path}`).scrollIntoView();
-    // navigate(`${path}`);
   };
 
   return (
@@ -32,11 +25,22 @@ function NavBar() {
         onClick={() => toggle()}
         className={style.nav__label}
       >
-        
-        <div class={theme === "light" ? style.btn_hmb : style.btn_hmbD} id="btn_hmb">
-          <div class={theme === "light" ? style.linea1 : style.linea1D} id="linea1"></div>
-          <div class={theme === "light" ? style.linea2 : style.linea2D} id="linea2"></div>
-          <div class={theme === "light" ? style.linea3 : style.linea3D} id="linea3"></div>
+        <div
+          class={theme === "light" ? style.btn_hmb : style.btn_hmbD}
+          id="btn_hmb"
+        >
+          <div
+            class={theme === "light" ? style.linea1 : style.linea1D}
+            id="linea1"
+          ></div>
+          <div
+            class={theme === "light" ? style.linea2 : style.linea2D}
+            id="linea2"
+          ></div>
+          <div
+            class={theme === "light" ? style.linea3 : style.linea3D}
+            id="linea3"
+          ></div>
         </div>
       </label>
       <input
@@ -45,7 +49,6 @@ function NavBar() {
         checked={openMenu}
         className={style.nav__input}
       />
-
 
       <div class={theme === "light" ? style.linksSection : style.linksSectionD}>
         <a

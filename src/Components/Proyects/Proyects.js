@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import style from "./Proyects.module.css";
-// import caneapp from "../../IMG/caneapp.png"
-// import countriesapp from "../../IMG/countriesapp.png"
 import { dataProyects, dataProyects1 } from "../../Assets/data";
 import Works from "./Works";
-import LoadingPage from "../LoadingPage/loadingPage";
 import * as ReactRedux from "react-redux";
 
 function Proyects() {
@@ -67,7 +64,6 @@ function Proyects() {
       </div>
     </section>
     </section> 
-
   );
 }
 

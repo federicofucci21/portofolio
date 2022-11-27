@@ -8,7 +8,6 @@
   align-items: center;
   border: 1px solid black;
   padding: 2rem;
-  /* justify-content: space-between; */
   background-color: rgb(181, 175, 175);
 }
 .divD {
@@ -17,7 +16,6 @@
   align-items: center;
   border: 1px dashed rgb(146, 89, 89);
   padding: 2rem;
-  /* justify-content: space-between; */
 }
 
 .diva {
@@ -27,16 +25,8 @@
   flex-direction: column;
   align-items: left;
   justify-content: center;
-
-  /* text-align: center; */
 }
-/* .diva>div {
 
-
-  align-items: center;
-  justify-content:left;
-
-} */
 .divaD {
   width: 25rem;
   height: 100%;
@@ -44,7 +34,6 @@
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  /* text-align: center; */
 }
 
 .hello {
@@ -119,42 +108,36 @@
 .span4 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .4s;
 }
 .span5 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .5s;
 }
 .span6 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .6s;
 }
 .span7 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .7s;
 }
 .span8 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .8s;
 }
 .span9 {
   position: relative;
   display: inline-block;
-  /* text-transform: uppercase; */
   animation: name 1.5s infinite;
   animation-delay: .9s;
 }
@@ -166,12 +149,6 @@
     transform: translateY(-20px)
   }
 }
-
-
-
-
-
-
 
 
 .link {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as ReactRedux from "react-redux";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
@@ -14,10 +14,6 @@ function Home() {
     <div class={style.home} id={theme}>
       <NavBar />
       <section class={style.components}>
-        {/* <div>
-          <button>eng</button>
-          <button>esp</button>
-        </div> */}
         <About />
         <Proyects />
         <Skills />
