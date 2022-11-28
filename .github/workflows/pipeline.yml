@@ -1,0 +1,13 @@
+name: pipeline
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Echo message
+        run: 
+          echo "Hello Fede!"
