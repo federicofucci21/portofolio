@@ -1,20 +1,13 @@
-export const changeTheme = (payload) => {
-    console.log(payload)
-    return {
-      type: "CHANGE_THEME",
-      payload: payload,
-    };
-  };
+export const changeTheme = (payload) => ({
+  type: "CHANGE_THEME",
+  payload,
+});
 
-  export const changeLang = (payload) => {
-    return {
-      type: "CHANGE_LANG",
-      payload: payload,
-    };
-  };
-  
-  export const changeOpenMenu = () => {
-    return {
-      type: "CHANGE_OPENMENU"
-    };
-  };
+export const changeLang = (payload) => ({
+  type: "CHANGE_LANG",
+  payload,
+});
+
+export const changeOpenMenu = () => ({
+  type: "CHANGE_OPENMENU",
+});

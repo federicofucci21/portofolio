@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
 import * as ReactRedux from "react-redux";
+import { IoIosPower } from "react-icons/io";
 import { changeTheme } from "../../Redux/Actions/Actions";
 import style from "./Switch.module.css";
-import { IoIosPower } from "react-icons/io";
 
 function Switch() {
   const theme = ReactRedux.useSelector((state) => state.theme);
