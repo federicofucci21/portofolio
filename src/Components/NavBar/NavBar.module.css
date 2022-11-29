@@ -145,7 +145,7 @@
 .btn_hmb {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   height: 5rem;
   flex-direction: column;
   cursor: pointer;
@@ -154,7 +154,7 @@
 .btn_hmbD {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   height: 5rem;
   flex-direction: column;
   cursor: pointer;
