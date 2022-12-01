@@ -17,8 +17,10 @@ jobs:
         with:
           node-version: 16
       - name: install dependecies
-        run: npm install
+        run: npm install --no-audit --no-fund --no-optional
       - name: Run build
         run: npm run build
       - name: Run lint
         run: npm run lint
+      - name: Run Test
+        run: npm run test
