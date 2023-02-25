@@ -16,6 +16,7 @@ import whatsapp from "../IMG/contact/whatsapp.png";
 import github from "../IMG/contact/github.png";
 import email from "../IMG/contact/email.png";
 import linkedin from "../IMG/contact/linkedin.png";
+import workinprogess from "../IMG/workinprogess.jpg";
 
 export const contact = [
   {
@@ -189,10 +190,20 @@ export const dataProyects1 = {
     tecnologies:
       "NodeJs / MySql / Sequelize / Swagger / ExpressJS / JavaScript / SCRUM",
   },
+  CaneAdm: {
+    name: "Cane - Admin Dashboard",
+    dev: "Full-Stack",
+    img: workinprogess,
+    demo: "https://github.com/federicofucci21",
+    github: "https://github.com/federicofucci21/caneadm",
+    description:
+      "Admin dashboard designed with NestJs using Typescript.It is the dashboard necessary to store and save all of information about clients, products and orders of 'Cane Medallones Vegetarianos' e-commerce.",
+    tecnologies: "NestJs / MySql / TypeORM / TypeScript / JavaScript / SCRUM",
+  },
   any: {
     name: "Comming soon...",
     dev: "Full-Stack",
-    img: "Comming soon...",
+    img: workinprogess,
     demo: "https://federicofucci.vercel.app/",
     github: "https://github.com/federicofucci21",
     description: "Comming soon...",

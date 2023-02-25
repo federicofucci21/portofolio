@@ -54,9 +54,9 @@ function Proyects() {
             </div>
             <div
               className={theme === "light" ? style.btnNavbar : style.btnNavbarD}
-              onClick={() => toggle("any")}
+              onClick={() => toggle("CaneAdm")}
             >
-              Comming soon...
+              Cane-Adm
             </div>
             <div
               className={theme === "light" ? style.btnNavbar : style.btnNavbarD}
